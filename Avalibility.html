@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>GWSC - Avalibility </title>
+</head>
+
+<body>
+    <div>   
+        <Nav id="navBar" class="navbar-white">
+            <a href="Index.html" ><img src="Images/logo-green.png" class="logo" > </a>
+            <ul class="nav-links">
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="Info.html" >Information</a></li>
+                <li><a href="Local Attraction.html" >Local Attractions</a></li>
+                <li><a href="Avalibility.html" class="active">Avalibility</a></li>
+                <li><a href="ContactUs.html" >Contact</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+        
+            <a href="register.html" class="register-btn">Register Now</a>                  
+            <img src="Images\menu-green.png" class="menu"       
+             onclick="togglebtn()" >
+        </nav>
+
+</div>
+
+<div class="container">
+    <form class="search-bar" action="https://www.google.com/search" method="get">
+       <input type="text" placeholder="Search Anything" name="">
+       <button type="submit"><img src="Images/search.png"></button>
+    </form>
+</div>
+
+<div class="container">
+<div id="slider">
+        <figure>
+        <img src="Images/image-22.png" alt="">
+        <img src="Images/image-22.png" alt="">
+        <img src="Images/image-22.png" alt="">
+        <img src="Images/image-22.png" alt="">
+        <img src="Images/image-22.png" alt="">
+        </figure>
+</div>
+</div>
+
+<div class="conatiner">
+    <form action="functions/search_availability.php" method="post">
+        <label for="site_name">Site Name:</label>
+        <input type="text" id="site_name" name="site_name"><br>
+      
+        <label for="pitch_type">Pitch Type:</label>
+        <select id="pitch_type" name="pitch_type">
+          <option value="tent">Tent</option>
+          <option value="touring_caravan">Touring Caravan</option>
+          <option value="motorhome">Motorhome</option>
+        </select><br>
+      
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br>
+      
+        <input type="submit" value="Search">
+      </form>
+
+</div>
+
+<div class="container">
+<h2 class="sub-title">Camping</h2>
+<div class="trending">
+    <div>
+        <img src="Images/new-york.png">
+        <h3>Mchinji</h3>
+    </div>
+    
+    <div>
+        <img src="Images/dubai.png">
+        <h3>Zomba</h3>
+    </div>
+
+    <div>
+        <img src="Images/paris.png">
+        <h3>Blantyre</h3>
+    </div>
+
+    <div>
+        <img src="Images/new-delhi.png">
+        <h3>Kasungu</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="paragraph">
+     <h2 class="sub-title">Camping</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at <br> quaerat deserunt iure possimus! Repellendus, reiciendis quas quaerat itaque, <br> a inventore nostrum cumque illum aut voluptates at nam iure amet.   </p>
+ </div>
+ </div>
+
+
+<h2 class="sub-title">Swimming</h2>
+<div class="trending">
+    <div>
+        <img src="Images/new-york.png">
+        <h3>Mchinji</h3>
+    </div>
+
+    <div>
+        <img src="Images/paris.png">
+        <h3>Blantyre</h3>
+    </div>
+
+    <div>
+        <img src="Images/dubai.png">
+        <h3>Zomba</h3>
+    </div>
+
+    <div>
+        <img src="Images/new-delhi.png">
+        <h3>Kasungu</h3>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="sub-title">Swimming</h2>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at <br> quaerat deserunt iure possimus! Repellendus, reiciendis quas quaerat itaque, <br> a inventore nostrum cumque illum aut voluptates at nam iure amet.</p>
+</div>
+</div>
+
+
+<div class="container">
+<div class="footer">
+    <a href="https://facebook.com"> <img src="Images/facebook.png" ></a>
+    <a href="https://instagram.com"> <img src="Images/instagram.png"></a>
+    <a href="https://twitter.com"> <img src="Images/twitter.png"></a>
+    <a href="https://youtube.com"> <img src="Images/youtube.png" ></a>
+    <a href="https://linkedin.com"> <img src="Images/linkedin.png" ></a>
+<hr>
+<p>Copyright @ 2023, GWSC</p>
+</div>
+
+</div>
+
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
+

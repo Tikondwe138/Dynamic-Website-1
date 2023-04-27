@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>GWSC - features </title>
+</head>
+
+<body>
+    <div>   
+        <Nav id="navBar" class="navbar-white">
+            <a href="Index.html" ><img src="Images/logo-green.png" class="logo" > </a>
+            <ul class="nav-links">
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="Info.html" >Information</a></li>
+                <li><a href="Local Attraction.html" >Local Attractions</a></li>
+                <li><a href="Avalibility.html">Avalibility</a></li>
+                <li><a href="ContactUs.html" >Contact</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+            </ul>
+        
+            <a href="register.html" class="register-btn">Register Now</a>                  
+            <img src="Images\menu-green.png" class="menu"       
+             onclick="togglebtn()">   
+        </Nav>
+
+</div>
+
+<div class="container">
+    <form class="search-bar" action="https://www.google.com/search" method="get">
+       <input type="text" placeholder="Search Anything" name="">
+       <button type="submit"><img src="Images/search.png"></button>
+    </form>
+</div>
+<!------------------------CONTENT PAGE (2)---------------------------->
+<div class="container">
+  <div class="grid-container">
+    <div class="grid-item-left">
+        <h2 class="sub-title">Leisure Facilities</h2>
+        <img src="leisure.jpg" alt="Leisure Facilities">
+        <p>At GWSC, we offer a range of leisure facilities to enhance your camping and swimming experience. Our facilities include an outdoor cinema, playground, picnic area, and a sports field.</p>
+       
+        <h2 class="sub-title">Entertainment</h2>
+        <img src="entertainment.jpg" alt="Entertainment">
+        <p>We provide a variety of entertainment options for our guests, including live music, dance performances, and storytelling around the campfire. Join in the fun and create memories that will last a lifetime.</p>
+        
+        <h2 class="sub-title">Amenities and Rules</h2>
+        <img src="amenities.jpg" alt="Amenities and Rules">
+        <p>Our site has a range of amenities, including car parking, showers, toilets, and internet access. Please ensure you follow our rules during your stay, including respecting other guests, keeping noise levels down, and leaving the site clean and tidy.</p>
+        
+      
+    </div>
+
+    <div class="grid-item-right">
+        <div class="side-section">
+            <h2>Wearable Technology Categories</h2>
+            <ul>
+              <li><a href="#">Smartwatches</a></li>
+              <li><a href="#">Fitness Trackers</a></li>
+              <li><a href="#">Smart Glasses</a></li>
+              <li><a href="#">Smart Clothing</a></li>
+              <li><a href="#">Hearable Devices</a></li>
+              <li><a href="#">Virtual Reality Headsets</a></li>
+              <li><a href="#">Smart Rings</a></li>
+              <li><a href="#">Smart Shoes</a></li>
+            </ul>
+          </div>    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container">
+<div class="footer">
+    <a href="https://facebook.com"> <img src="Images/facebook.png" ></a>
+    <a href="https://instagram.com"> <img src="Images/instagram.png"></a>
+    <a href="https://twitter.com"> <img src="Images/twitter.png"></a>
+    <a href="https://youtube.com"> <img src="Images/youtube.png" ></a>
+    <a href="https://linkedin.com"> <img src="Images/linkedin.png" ></a>
+<hr>
+<p>Copyright @ 2023, GWSC</p>
+</div>
+
+</div>
+
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
+

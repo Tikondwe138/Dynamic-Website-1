@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>GWSC - Contact form </title>
+</head>
+
+<body>
+    <div>   
+        <Nav id="navBar" class="navbar-white">
+            <a href="Index.html" ><img src="Images/logo-green.png" class="logo" > </a>
+            <ul class="nav-links">
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="Info.html">Information</a></li>
+                <li><a href="Local Attraction.html" >Local Attractions</a></li>
+                <li><a href="Avalibility.html">Avalibility</a></li>
+                <li><a href="ContactUs.html"  class="active">Contact</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+            <a href="register.html" class="register-btn">Register Now</a>                  
+            <img src="Images\menu-green.png" class="menu"       
+             onclick="togglebtn()">   
+        </Nav>
+
+</div>
+
+<div class="container">
+    <form class="search-bar" action="https://www.google.com/search" method="get">
+       <input type="text" placeholder="Search Anything" name="">
+       <button type="submit"><img src="Images/search.png"></button>
+    </form>
+</div>
+<!------------------------CONTENT PAGE (2)---------------------------->
+
+<div class="container"  id="contact">
+
+   <div class="contact-title">
+        <h1>Contact form </h1>
+   </div>
+
+<form action="functions/contact-handler.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+<input type="submit" value="Submit">
+</form>
+
+
+</div>
+
+<div class="container">
+    
+<div class="footer">
+    <a href="https://facebook.com"> <img src="Images/facebook.png" ></a>
+    <a href="https://instagram.com"> <img src="Images/instagram.png"></a>
+    <a href="https://twitter.com"> <img src="Images/twitter.png"></a>
+    <a href="https://youtube.com"> <img src="Images/youtube.png" ></a>
+    <a href="https://linkedin.com"> <img src="Images/linkedin.png" ></a>
+<hr>
+<p>Copyright @ 2023, GWSC <br>
+
+</p>
+</div>
+
+</div>
+
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
+
